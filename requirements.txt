@@ -1,0 +1,7 @@
+streamlit
+pillow
+numpy
+pandas
+tensorflow
+opencv-python-headless
+h5py
