@@ -1,0 +1,15 @@
+training_tiles/
+correction_training_tiles/
+palm_training_tiles/
+review_tiles/
+images/
+masks/
+tiles/
+predicted_tiles/
+task_*/
+*_annotations_*
+*.tif
+*.tiff
+*.png
+__pycache__/
+*.pyc

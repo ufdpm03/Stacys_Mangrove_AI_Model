@@ -1,0 +1,66 @@
+task_*/
+task_*
+*_annotations_*
+# large drone images
+*.tif
+*.tiff
+
+# generated input
+input_orthomosaic.tif
+
+
+# AI processing folders
+tiles/
+predicted_tiles/
+
+
+# training data
+training_tiles/
+correction_training_tiles/
+palm_training_tiles/
+review_tiles/
+images/
+masks/
+
+task_*/
+
+
+# outputs
+mangrove_overlay_full.png
+mangrove_mask_full.png
+whole_mangrove_prediction.png
+whole_mangrove_overlay.png
+prediction.png
+prediction_overlay.png
+
+*.csv
+
+
+# python junk
+__pycache__/
+*.pyc
+
+
+# windows
+Thumbs.db
+desktop.ini
+
+# CVAT annotation exports
+task_*
+*_annotations_*
+
+# training images
+ImageSets/
+SegmentationClass/
+SegmentationObject/
+JPEGImages/
+
+# big AI data folders
+tiles/
+predicted_tiles/
+training_tiles/
+correction_training_tiles/
+palm_training_tiles/
+review_tiles/
+images/
+masks/
