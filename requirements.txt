@@ -2,6 +2,6 @@ streamlit
 pillow
 numpy
 pandas
-tensorflow-cpu
+tensorflow==2.15.1
 opencv-python-headless
 h5py
