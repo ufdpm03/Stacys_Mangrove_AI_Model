@@ -3,3 +3,4 @@ pillow
 numpy==1.26.4
 pandas
 tensorflow==2.15.1
+opencv-python-headless
