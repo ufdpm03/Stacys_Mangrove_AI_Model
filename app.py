@@ -1,4 +1,5 @@
 import subprocess
+import sys
 from pathlib import Path
 import shutil
 
@@ -56,7 +57,7 @@ def clean_previous():
 
 def run_script(name):
     result = subprocess.run(
-        ["python", name],
+        [sys.executable, str(BASE_DIR / name)],
         cwd=str(BASE_DIR),
         capture_output=True,
         text=True
@@ -153,7 +154,7 @@ with cols[0]:
     st.subheader("Mangrove Overlay")
 
     if overlay:
-        st.image(preview(overlay), use_container_width=True)
+        st.image(preview(mask), width="stretch")
         with open(overlay, "rb") as f:
             st.download_button(
                 "Download Overlay",
@@ -168,7 +169,7 @@ with cols[1]:
     st.subheader("Prediction Mask")
 
     if mask:
-        st.image(preview(mask), use_container_width=True)
+        st.image(preview(overlay), width="stretch")
         with open(mask, "rb") as f:
             st.download_button(
                 "Download Mask",
